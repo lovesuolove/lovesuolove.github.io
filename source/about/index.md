@@ -22,7 +22,7 @@ layout: "page"
           <span class="link-icon">🎮</span>
           <span class="link-text">体验我的游戏</span>
         </a>
-        <a href="/games/snake.html" class="quick-link snake-link">
+        <a href="/static/snake.html" class="quick-link snake-link">
           <span class="link-icon">🐍</span>
           <span class="link-text">贪吃蛇游戏</span>
         </a>

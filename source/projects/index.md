@@ -38,7 +38,7 @@ layout: "page"
     </div>
     
     <div class="project-links">
-      <a href="/games/snake.html" class="btn-demo" target="_blank">🎮 在线试玩</a>
+      <a href="/static/snake.html" class="btn-demo" target="_blank">🎮 在线试玩</a>
       <a href="https://github.com/lovesuolove/modern-snake-game" class="btn-source" target="_blank">📝 查看源码</a>
     </div>
   </div>

@@ -417,7 +417,7 @@ class DebugMode {
 
 ## 🔗 相关链接
 
-- [在线试玩](https://lovesuolove.github.io/games/snake.html)
+- [在线试玩](https://lovesuolove.github.io/static/snake.html)
 - [源码地址](https://github.com/lovesuolove/snake-game)
 - [开发日志](https://lovesuolove.github.io/tags/游戏开发/)
 
