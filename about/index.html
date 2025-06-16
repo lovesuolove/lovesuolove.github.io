@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=consolas:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.css" integrity="sha256-zM8WXtG4eUn7dKKNMTuoWZub++VnSfaOpA/8PJfvTBo=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"lovesuolove.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.23.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12,"width":280},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="👋 你好，我是 Suo                        S                        欢迎来到我的创意世界！       我是一名热爱编程的开发者，专注于创建有趣且实用的小工具和小游戏。我相信技术应该让生活更美好，代码应该充满创意和乐趣。           🚀 我的技能        💻 前端开发                     🌐">
+<meta property="og:type" content="website">
+<meta property="og:title" content="关于我">
+<meta property="og:url" content="https://lovesuolove.github.io/about/index.html">
+<meta property="og:site_name" content="我的小工具和小游戏展示">
+<meta property="og:description" content="👋 你好，我是 Suo                        S                        欢迎来到我的创意世界！       我是一名热爱编程的开发者，专注于创建有趣且实用的小工具和小游戏。我相信技术应该让生活更美好，代码应该充满创意和乐趣。           🚀 我的技能        💻 前端开发                     🌐">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-12-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-06-16T04:40:12.721Z">
+<meta property="article:author" content="Suo">
+<meta property="article:tag" content="小工具,小游戏,JavaScript,HTML5,Canvas,贪吃蛇,开发者,编程">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://lovesuolove.github.io/about/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://lovesuolove.github.io/about/index.html","path":"about/index.html","title":"关于我"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>关于我 | 我的小工具和小游戏展示
+</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js" integrity="sha256-hiUEBwFEpLF6DlB8sGXlKo4kPZ46Ui4qGpd0vrVkOm4=" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.1/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js" defer></script>
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous" defer></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://lovesuolove.github.io/about/"}</script>
+  <script src="/js/third-party/quicklink.js" defer></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">我的小工具和小游戏展示</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">分享创意，传递快乐</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-projects"><a href="/projects/" rel="section"><i class="fa fa-code fa-fw"></i>projects</a></li><li class="menu-item menu-item-games"><a href="/games/" rel="section"><i class="fa fa-gamepad fa-fw"></i>games</a></li><li class="menu-item menu-item-tools"><a href="/tools/" rel="section"><i class="fa fa-wrench fa-fw"></i>tools</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">3</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%F0%9F%91%8B-%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%98%AF-Suo"><span class="nav-number">1.</span> <span class="nav-text">👋 你好，我是 Suo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.1.</span> <span class="nav-text">欢迎来到我的创意世界！</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%9A%80-%E6%88%91%E7%9A%84%E6%8A%80%E8%83%BD"><span class="nav-number">1.2.</span> <span class="nav-text">🚀 我的技能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.2.1.</span> <span class="nav-text">💻 前端开发</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">HTML5 &amp; CSS3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">JavaScript</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">Canvas &amp; WebGL</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.2.2.</span> <span class="nav-text">🛠️ 开发工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">Git &amp; GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">VS Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">Node.js</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8E%AF-%E6%88%91%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%90%86%E5%BF%B5"><span class="nav-number">1.3.</span> <span class="nav-text">🎯 我的项目理念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.3.1.</span> <span class="nav-text">创意至上</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%88-%E6%88%91%E7%9A%84%E6%88%90%E9%95%BF%E5%8E%86%E7%A8%8B"><span class="nav-number">1.4.</span> <span class="nav-text">📈 我的成长历程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.4.0.1.</span> <span class="nav-text">编程启蒙</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8E%A8-%E6%88%91%E7%9A%84%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD"><span class="nav-number">1.5.</span> <span class="nav-text">🎨 我的兴趣爱好</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.5.0.1.</span> <span class="nav-text">编程</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%9E-%E8%81%94%E7%B3%BB%E6%88%91"><span class="nav-number">1.6.</span> <span class="nav-text">📞 联系我</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.6.1.</span> <span class="nav-text">🤝 让我们一起创造有趣的项目！</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.6.1.1.</span> <span class="nav-text">邮箱</span></a></li></ol></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Suo"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Suo</p>
+  <div class="site-description" itemprop="description">展示个人开发的小工具和小游戏，包括现代化贪吃蛇游戏等有趣项目</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lovesuolove" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lovesuolove" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:lovesuolove@gmail.com" title="E-Mail → mailto:lovesuolove@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="zh-CN"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">关于我
+</h1>
+
+<div class="post-meta-container">
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <h1 id="👋-你好，我是-Suo"><a href="#👋-你好，我是-Suo" class="headerlink" title="👋 你好，我是 Suo"></a>👋 你好，我是 Suo</h1><div class="about-intro">
+  <div class="intro-content">
+    <div class="avatar-section">
+      <div class="avatar-placeholder">
+        <span class="avatar-text">S</span>
+      </div>
+    </div>
+    <div class="intro-text">
+      <h2>欢迎来到我的创意世界！</h2>
+      <p>我是一名热爱编程的开发者，专注于创建有趣且实用的小工具和小游戏。我相信技术应该让生活更美好，代码应该充满创意和乐趣。</p>
+    </div>
+  </div>
+</div>
+
+<h2 id="🚀-我的技能"><a href="#🚀-我的技能" class="headerlink" title="🚀 我的技能"></a>🚀 我的技能</h2><div class="skills-section">
+  <div class="skill-category">
+    <h3>💻 前端开发</h3>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-info">
+          <h4>HTML5 & CSS3</h4>
+          <p>现代化的网页结构和样式设计</p>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-info">
+          <h4>JavaScript</h4>
+          <p>动态交互和复杂逻辑实现</p>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-info">
+          <h4>Canvas & WebGL</h4>
+          <p>图形渲染和游戏开发</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="skill-category">
+    <h3>🛠️ 开发工具</h3>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <div class="skill-icon">🐙</div>
+        <div class="skill-info">
+          <h4>Git & GitHub</h4>
+          <p>版本控制和代码协作</p>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">💻</div>
+        <div class="skill-info">
+          <h4>VS Code</h4>
+          <p>高效的代码编辑环境</p>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">🚀</div>
+        <div class="skill-info">
+          <h4>Node.js</h4>
+          <p>JavaScript 运行时环境</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 id="🎯-我的项目理念"><a href="#🎯-我的项目理念" class="headerlink" title="🎯 我的项目理念"></a>🎯 我的项目理念</h2><div class="philosophy-section">
+  <div class="philosophy-grid">
+    <div class="philosophy-card">
+      <div class="philosophy-icon">✨</div>
+      <h3>创意至上</h3>
+      <p>每个项目都应该有独特的创意和想法，不仅仅是技术的堆砌，更要有灵魂和故事。</p>
+    </div>
+    
+<pre><code>&lt;div class=&quot;philosophy-card&quot;&gt;
+  &lt;div class=&quot;philosophy-icon&quot;&gt;🎮&lt;/div&gt;
+  &lt;h3&gt;寓教于乐&lt;/h3&gt;
+  &lt;p&gt;通过游戏和互动的方式让学习变得有趣，让技术变得平易近人。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;philosophy-card&quot;&gt;
+  &lt;div class=&quot;philosophy-icon&quot;&gt;🌟&lt;/div&gt;
+  &lt;h3&gt;用户体验&lt;/h3&gt;
+  &lt;p&gt;始终以用户为中心，追求简洁、直观、流畅的使用体验。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;philosophy-card&quot;&gt;
+  &lt;div class=&quot;philosophy-icon&quot;&gt;🔄&lt;/div&gt;
+  &lt;h3&gt;持续改进&lt;/h3&gt;
+  &lt;p&gt;不断学习新技术，优化现有项目，追求更好的解决方案。&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+</div>
+
+<h2 id="📈-我的成长历程"><a href="#📈-我的成长历程" class="headerlink" title="📈 我的成长历程"></a>📈 我的成长历程</h2><div class="timeline-section">
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-marker">🌱</div>
+      <div class="timeline-content">
+        <h4>编程启蒙</h4>
+        <p>开始接触编程，被代码的魅力深深吸引</p>
+      </div>
+    </div>
+    
+<pre><code>&lt;div class=&quot;timeline-item&quot;&gt;
+  &lt;div class=&quot;timeline-marker&quot;&gt;🎮&lt;/div&gt;
+  &lt;div class=&quot;timeline-content&quot;&gt;
+    &lt;h4&gt;游戏开发&lt;/h4&gt;
+    &lt;p&gt;开始尝试游戏开发，创作了第一个贪吃蛇游戏&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;timeline-item&quot;&gt;
+  &lt;div class=&quot;timeline-marker&quot;&gt;🛠️&lt;/div&gt;
+  &lt;div class=&quot;timeline-content&quot;&gt;
+    &lt;h4&gt;工具开发&lt;/h4&gt;
+  &lt;p&gt;开始开发各种实用小工具，提高日常效率&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;timeline-item&quot;&gt;
+  &lt;div class=&quot;timeline-marker&quot;&gt;🚀&lt;/div&gt;
+  &lt;div class=&quot;timeline-content&quot;&gt;
+    &lt;h4&gt;持续创新&lt;/h4&gt;
+    &lt;p&gt;不断探索新技术，创造更多有趣的项目&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+</div>
+
+<h2 id="🎨-我的兴趣爱好"><a href="#🎨-我的兴趣爱好" class="headerlink" title="🎨 我的兴趣爱好"></a>🎨 我的兴趣爱好</h2><div class="hobbies-section">
+  <div class="hobbies-grid">
+    <div class="hobby-item">
+      <div class="hobby-icon">💻</div>
+      <h4>编程</h4>
+      <p>享受解决问题的过程，喜欢探索新技术</p>
+    </div>
+    
+<pre><code>&lt;div class=&quot;hobby-item&quot;&gt;
+  &lt;div class=&quot;hobby-icon&quot;&gt;🎮&lt;/div&gt;
+  &lt;h4&gt;游戏&lt;/h4&gt;
+  &lt;p&gt;从游戏中获得灵感，理解交互设计&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hobby-item&quot;&gt;
+  &lt;div class=&quot;hobby-icon&quot;&gt;🎨&lt;/div&gt;
+  &lt;h4&gt;设计&lt;/h4&gt;
+  &lt;p&gt;关注用户界面和用户体验设计&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hobby-item&quot;&gt;
+  &lt;div class=&quot;hobby-icon&quot;&gt;📚&lt;/div&gt;
+  &lt;h4&gt;学习&lt;/h4&gt;
+  &lt;p&gt;持续学习新知识，保持技术敏感度&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+</div>
+
+<h2 id="📞-联系我"><a href="#📞-联系我" class="headerlink" title="📞 联系我"></a>📞 联系我</h2><div class="contact-section">
+  <h3>🤝 让我们一起创造有趣的项目！</h3>
+  <p>如果您对我的项目感兴趣，或者有任何建议和想法，欢迎与我联系：</p>
+  
+  <div class="contact-grid">
+    <a href="mailto:lovesuolove@gmail.com" class="contact-card">
+      <div class="contact-icon">📧</div>
+      <div class="contact-info">
+        <h4>邮箱</h4>
+        <p>lovesuolove@gmail.com</p>
+      </div>
+    </a>
+    
+<pre><code>&lt;a href=&quot;https://github.com/lovesuolove&quot; class=&quot;contact-card&quot; target=&quot;_blank&quot;&gt;
+  &lt;div class=&quot;contact-icon&quot;&gt;🐙&lt;/div&gt;
+  &lt;div class=&quot;contact-info&quot;&gt;
+    &lt;h4&gt;GitHub&lt;/h4&gt;
+    &lt;p&gt;@lovesuolove&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+</code></pre>
+  </div>
+</div>
+
+<style>
+.about-intro {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 30px 0;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.avatar-section {
+  flex-shrink: 0;
+}
+
+.avatar-placeholder {
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  font-weight: bold;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.intro-text h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.intro-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.skills-section {
+  margin: 50px 0;
+}
+
+.skill-category {
+  margin: 40px 0;
+}
+
+.skill-category h3 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.5em;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+}
+
+.skill-icon {
+  font-size: 2em;
+  flex-shrink: 0;
+}
+
+.skill-info h4 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.skill-info p {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.philosophy-section {
+  margin: 50px 0;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.philosophy-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e1e8ed;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.philosophy-icon {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.philosophy-card h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.philosophy-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.timeline-section {
+  margin: 50px 0;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e1e8ed;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -22px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 3px solid #667eea;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.timeline-content {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.timeline-content h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #666;
+  margin: 0;
+}
+
+.hobbies-section {
+  margin: 50px 0;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.hobby-item {
+  text-align: center;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hobby-item:hover {
+  transform: translateY(-3px);
+}
+
+.hobby-icon {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.hobby-item h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hobby-item p {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.contact-section {
+  background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.contact-section h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+.contact-section p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  color: #333;
+}
+
+.contact-icon {
+  font-size: 2em;
+  flex-shrink: 0;
+}
+
+.contact-info h4 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-info p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hobbies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline {
+    padding-left: 20px;
+  }
+  
+  .timeline-marker {
+    left: -15px;
+    width: 25px;
+    height: 25px;
+    font-size: 1em;
+  }
+}
+</style>
+      </div>
+      
+      
+      
+    </div>
+
+    
+    
+
+
+    <div class="comments" id="isso-thread"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2024 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Suo</span>
+  </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="isso" type="application/json">{"enable":false,"host":null,"script":null}</script>
+<script src="/js/third-party/comments/isso.js" defer></script>
+
+</body>
+</html>
