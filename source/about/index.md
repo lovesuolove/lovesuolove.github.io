@@ -17,6 +17,16 @@ layout: "page"
     <div class="intro-text">
       <h2>欢迎来到我的创意世界！</h2>
       <p>我是一名热爱编程的开发者，专注于创建有趣且实用的小工具和小游戏。我相信技术应该让生活更美好，代码应该充满创意和乐趣。</p>
+      <div class="quick-links">
+        <a href="/games/" class="quick-link games-link">
+          <span class="link-icon">🎮</span>
+          <span class="link-text">体验我的游戏</span>
+        </a>
+        <a href="/games/snake.html" class="quick-link snake-link">
+          <span class="link-icon">🐍</span>
+          <span class="link-text">贪吃蛇游戏</span>
+        </a>
+      </div>
     </div>
   </div>
 </div>

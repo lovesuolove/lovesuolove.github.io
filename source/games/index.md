@@ -67,11 +67,11 @@ layout: "page"
     </div>
     
     <div class="game-actions">
-      <a href="/games/snake/" class="play-btn" target="_blank">
+      <a href="/games/snake.html" class="play-btn" target="_blank">
         <span class="play-icon">▶️</span>
         立即游玩
       </a>
-      <a href="https://github.com/lovesuolove/modern-snake-game" class="source-btn" target="_blank">
+      <a href="https://github.com/lovesuolove/lovesuolove.github.io" class="source-btn" target="_blank">
         <span class="source-icon">📝</span>
         查看源码
       </a>
