@@ -103,4 +103,4 @@ theme: next
 deploy:
   type: git
   repo: git@github.com:lovesuolove/lovesuolove.github.io.git
-  branch: gh-pages
+  branch: master
