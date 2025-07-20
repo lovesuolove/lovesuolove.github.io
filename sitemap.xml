@@ -20,6 +20,24 @@
   </url>
   
   <url>
+    <loc>https://lovesuolove.github.io/about/index.html</loc>
+    
+    <lastmod>2025-07-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovesuolove.github.io/categories/index.html</loc>
+    
+    <lastmod>2025-07-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lovesuolove.github.io/projects/index.html</loc>
     
     <lastmod>2025-07-20</lastmod>
@@ -57,24 +75,6 @@
   
   <url>
     <loc>https://lovesuolove.github.io/about/contact.html</loc>
-    
-    <lastmod>2025-07-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lovesuolove.github.io/about/index.html</loc>
-    
-    <lastmod>2025-07-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lovesuolove.github.io/categories/index.html</loc>
     
     <lastmod>2025-07-20</lastmod>
     
