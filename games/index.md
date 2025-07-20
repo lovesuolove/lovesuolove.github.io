@@ -81,17 +81,83 @@ layout: "page"
 
 ---
 
+## 🧩 俄罗斯方块游戏
+
+<div class="game-showcase tetris-showcase">
+  <div class="game-preview">
+    <div class="game-screen tetris-screen">
+      <div class="tetris-demo">
+        <div class="tetris-block t-block"></div>
+        <div class="tetris-block i-block"></div>
+        <div class="tetris-block o-block"></div>
+        <div class="falling-piece"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="game-info">
+    <h3>🧩 俄罗斯方块游戏</h3>
+    <p>经典的俄罗斯方块游戏，采用Vue.js框架开发，拥有华丽的3D视觉效果和流畅的游戏体验。</p>
+    
+    <div class="game-features">
+      <div class="feature-grid">
+        <div class="feature-item">
+          <span class="feature-icon">🎨</span>
+          <span>3D视觉效果</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✨</span>
+          <span>粒子背景系统</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📱</span>
+          <span>移动端适配</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🎵</span>
+          <span>音效系统</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="game-controls">
+      <h4>🎮 游戏操作：</h4>
+      <div class="controls-grid">
+        <div class="control-item">
+          <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>
+          <span>移动和旋转</span>
+        </div>
+        <div class="control-item">
+          <kbd>SPACE</kbd>
+          <span>暂停/继续</span>
+        </div>
+        <div class="control-item">
+          <span class="mobile-icon">📱</span>
+          <span>触屏控制</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="game-actions">
+      <a href="/games/tetris.html" class="play-btn" target="_blank">
+        <span class="play-icon">▶️</span>
+        立即游玩
+      </a>
+      <a href="https://github.com/lovesuolove/lovesuolove.github.io" class="source-btn" target="_blank">
+        <span class="source-icon">📝</span>
+        查看源码
+      </a>
+    </div>
+  </div>
+</div>
+
+---
+
 ## 🚧 更多游戏开发中
 
 <div class="upcoming-games">
   <h3>即将推出的游戏：</h3>
   <div class="upcoming-grid">
-    <div class="upcoming-item">
-      <div class="upcoming-icon">🧩</div>
-      <h4>俄罗斯方块</h4>
-      <p>经典的俄罗斯方块游戏，现代化界面设计</p>
-      <span class="status developing">开发中</span>
-    </div>
     
     <div class="upcoming-item">
       <div class="upcoming-icon">🎯</div>
@@ -191,6 +257,65 @@ layout: "page"
 @keyframes glow {
   0% { box-shadow: 0 0 15px #ff4444; }
   100% { box-shadow: 0 0 25px #ff4444, 0 0 35px #ff4444; }
+}
+
+/* Tetris Game Styles */
+.tetris-showcase {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+}
+
+.tetris-demo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.tetris-block {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+}
+
+.t-block {
+  background: #9b59b6;
+  top: 80px;
+  left: 100px;
+  box-shadow: 0 0 10px #9b59b6;
+}
+
+.i-block {
+  background: #3498db;
+  top: 120px;
+  left: 80px;
+  width: 80px;
+  height: 20px;
+  box-shadow: 0 0 10px #3498db;
+}
+
+.o-block {
+  background: #f1c40f;
+  top: 160px;
+  left: 120px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 10px #f1c40f;
+}
+
+.falling-piece {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #e74c3c;
+  top: 40px;
+  left: 140px;
+  box-shadow: 0 0 15px #e74c3c;
+  animation: tetris-fall 3s infinite linear;
+}
+
+@keyframes tetris-fall {
+  0% { top: 40px; }
+  100% { top: 200px; }
 }
 
 .game-info {

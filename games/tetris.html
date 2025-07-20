@@ -539,62 +539,122 @@ body {
 
 /* iPhone适配 */
 @media (max-width: 480px) {
+    body {
+        padding: 5px;
+        overflow-x: hidden;
+    }
+    
     .game-container {
-        padding: 15px;
-        margin: 5px;
+        padding: 10px;
+        margin: 0;
         max-width: 100%;
+        width: 100vw;
+        max-height: 100vh;
+        border-radius: 15px;
     }
     
     .header h1 {
-        font-size: 22px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
     
     .score-board {
         grid-template-columns: repeat(2, 1fr);
-        gap: 6px;
+        gap: 5px;
+        margin-bottom: 15px;
     }
     
     .score-item {
-        padding: 6px 8px;
+        padding: 5px 8px;
     }
     
     .score-value {
-        font-size: 14px;
+        font-size: 13px;
     }
     
     .game-area {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        margin-bottom: 15px;
     }
     
     .side-panel {
         flex-direction: row;
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
+    }
+    
+    .next-piece {
+        padding: 8px;
+    }
+    
+    .next-piece h3 {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    
+    .next-piece canvas {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .game-board {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     
     .game-board canvas {
-        max-width: 250px;
-        max-height: 500px;
+        max-width: calc(100vw - 40px);
+        max-height: calc(60vh);
+        width: 280px;
+        height: 560px;
+    }
+    
+    .controls {
+        margin-top: 10px;
     }
     
     .control-btn {
-        padding: 12px 16px;
-        font-size: 14px;
+        padding: 10px 14px;
+        font-size: 13px;
+        margin: 2px;
     }
 }
 
 @media (max-width: 375px) {
+    .game-container {
+        padding: 8px;
+    }
+    
     .game-board canvas {
-        max-width: 220px;
-        max-height: 440px;
+        width: 260px;
+        height: 520px;
+        max-width: calc(100vw - 30px);
     }
     
     .control-btn {
-        padding: 10px 12px;
-        font-size: 13px;
-        min-width: 50px;
+        padding: 8px 12px;
+        font-size: 12px;
+        min-width: 45px;
+    }
+    
+    .header h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    .game-board canvas {
+        width: 240px;
+        height: 480px;
+    }
+    
+    .control-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+        min-width: 40px;
     }
 }
 
