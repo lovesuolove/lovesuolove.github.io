@@ -41,14 +41,14 @@ creative_commons:
 # ---------------------------------------------------------------
 
 menu:
-  home: / || fa fa-home
-  projects: /projects/ || fa fa-code
-  games: /games/ || fa fa-gamepad
-  tools: /tools/ || fa fa-wrench
-  archives: /archives/ || fa fa-archive
-  about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
+  首页: / || fa fa-home
+  项目: /projects/ || fa fa-code
+  游戏: /games/ || fa fa-gamepad
+  工具: /tools/ || fa fa-wrench
+  归档: /archives/ || fa fa-archive
+  关于: /about/ || fa fa-user
+  标签: /tags/ || fa fa-tags
+  分类: /categories/ || fa fa-th
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
