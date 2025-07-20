@@ -607,7 +607,7 @@ body {
     
     .game-board canvas {
         max-width: calc(100vw - 40px);
-        max-height: calc(60vh);
+        max-height: calc(50vh);
         width: 280px;
         height: 560px;
     }
@@ -625,36 +625,68 @@ body {
 
 @media (max-width: 375px) {
     .game-container {
-        padding: 8px;
+        padding: 5px;
     }
     
-    .game-board canvas {
-        width: 260px;
-        height: 520px;
-        max-width: calc(100vw - 30px);
+    .header {
+        margin-bottom: 8px;
     }
     
-    .control-btn {
-        padding: 8px 12px;
-        font-size: 12px;
-        min-width: 45px;
+    .score-board {
+        margin-bottom: 8px;
     }
     
-    .header h1 {
-        font-size: 18px;
+    .game-area {
+        margin-bottom: 8px;
     }
-}
-
-@media (max-width: 320px) {
+    
     .game-board canvas {
         width: 240px;
         height: 480px;
+        max-width: calc(100vw - 20px);
+        max-height: calc(45vh);
     }
     
     .control-btn {
         padding: 6px 10px;
         font-size: 11px;
         min-width: 40px;
+    }
+    
+    .header h1 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .game-container {
+        padding: 3px;
+    }
+    
+    .game-board canvas {
+        width: 220px;
+        height: 440px;
+        max-height: calc(40vh);
+    }
+    
+    .control-btn {
+        padding: 5px 8px;
+        font-size: 10px;
+        min-width: 35px;
+        margin: 1px;
+    }
+    
+    .header h1 {
+        font-size: 14px;
+    }
+    
+    .score-item {
+        padding: 3px 5px;
+    }
+    
+    .score-value {
+        font-size: 11px;
     }
 }
 

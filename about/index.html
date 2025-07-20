@@ -29,7 +29,7 @@
 <meta property="og:description" content="👋 你好，我是 Suo                        S                        欢迎来到我的创意世界！       我是一名热爱编程的开发者，专注于创建有趣且实用的小工具和小游戏。我相信技术应该让生活更美好，代码应该充满创意和乐趣。                           🎮           体验我的游戏">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-12-31T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-07-20T09:26:19.007Z">
+<meta property="article:modified_time" content="2025-07-20T09:40:39.503Z">
 <meta property="article:author" content="Suo">
 <meta property="article:tag" content="小工具,小游戏,JavaScript,HTML5,Canvas,贪吃蛇,开发者,编程">
 <meta name="twitter:card" content="summary">
@@ -735,21 +735,55 @@
 }
 
 @media (max-width: 768px) {
+  .about-intro {
+    padding: 30px 20px;
+    margin: 20px 0;
+  }
+  
   .intro-content {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
+  }
+  
+  .intro-text {
+    min-width: auto;
+  }
+  
+  .intro-text h2 {
+    font-size: 1.5em;
+  }
+  
+  .intro-text p {
+    font-size: 1em;
   }
   
   .skills-grid {
     grid-template-columns: 1fr;
   }
   
+  .skill-item {
+    padding: 15px;
+  }
+  
   .philosophy-grid {
     grid-template-columns: 1fr;
   }
   
+  .philosophy-card {
+    padding: 20px;
+  }
+  
   .hobbies-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hobby-item {
+    padding: 15px;
+  }
+  
+  .contact-section {
+    padding: 30px 20px;
   }
   
   .contact-grid {
@@ -765,6 +799,158 @@
     width: 25px;
     height: 25px;
     font-size: 1em;
+  }
+  
+  .timeline-content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-intro {
+    padding: 20px 15px;
+    margin: 15px 0;
+  }
+  
+  .avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    font-size: 2em;
+  }
+  
+  .intro-text h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+  
+  .intro-text p {
+    font-size: 0.9em;
+  }
+  
+  .quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .quick-link {
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9em;
+  }
+  
+  .skill-category h3 {
+    font-size: 1.2em;
+  }
+  
+  .skill-item {
+    padding: 12px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .philosophy-card {
+    padding: 15px;
+  }
+  
+  .philosophy-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .hobbies-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hobby-item {
+    padding: 12px;
+  }
+  
+  .hobby-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section {
+    padding: 20px 15px;
+  }
+  
+  .contact-section h3 {
+    font-size: 1.3em;
+  }
+  
+  .contact-section p {
+    font-size: 0.9em;
+  }
+  
+  .contact-card {
+    padding: 15px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .timeline {
+    padding-left: 15px;
+  }
+  
+  .timeline-marker {
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    font-size: 0.8em;
+  }
+  
+  .timeline-content {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-intro {
+    padding: 15px 10px;
+  }
+  
+  .avatar-placeholder {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+  }
+  
+  .intro-text h2 {
+    font-size: 1.1em;
+  }
+  
+  .intro-text p {
+    font-size: 0.8em;
+  }
+  
+  .skill-item {
+    padding: 10px;
+  }
+  
+  .philosophy-card {
+    padding: 12px;
+  }
+  
+  .hobby-item {
+    padding: 10px;
+  }
+  
+  .contact-section {
+    padding: 15px 10px;
+  }
+  
+  .contact-card {
+    padding: 12px;
   }
 }
 </style>
