@@ -804,13 +804,13 @@ body {
             
             <div class="controls">
                 <div class="control-row">
-                    <button @mousedown="startRotate" @mouseup="stopAction" @touchstart="startRotate" @touchend="stopAction" class="control-btn rotate-btn">🔄 旋转</button>
+                    <button @touchstart="handleRotateTouch" @touchend="handleTouchEndBtn" @mousedown="startRotate" @mouseup="stopAction" class="control-btn rotate-btn">🔄 旋转</button>
                     <button @click="togglePause" class="control-btn pause-btn">{{ paused ? '▶️ 继续' : '⏸️ 暂停' }}</button>
                 </div>
                 <div class="control-row">
-                    <button @mousedown="startMove(-1)" @mouseup="stopAction" @touchstart="startMove(-1)" @touchend="stopAction" class="control-btn move-btn">⬅️</button>
-                    <button @mousedown="startMove(0, 1)" @mouseup="stopAction" @touchstart="startMove(0, 1)" @touchend="stopAction" class="control-btn down-btn">⬇️</button>
-                    <button @mousedown="startMove(1)" @mouseup="stopAction" @touchstart="startMove(1)" @touchend="stopAction" class="control-btn move-btn">➡️</button>
+                    <button @touchstart="handleMoveTouch(-1)" @touchend="handleTouchEndBtn" @mousedown="startMove(-1)" @mouseup="stopAction" class="control-btn move-btn">⬅️</button>
+                    <button @touchstart="handleMoveTouch(0, 1)" @touchend="handleTouchEndBtn" @mousedown="startMove(0, 1)" @mouseup="stopAction" class="control-btn down-btn">⬇️</button>
+                    <button @touchstart="handleMoveTouch(1)" @touchend="handleTouchEndBtn" @mousedown="startMove(1)" @mouseup="stopAction" class="control-btn move-btn">➡️</button>
                 </div>
             </div>
         </div>
@@ -1278,7 +1278,55 @@ const app = createApp({
             }
         },
         
-        // 长按控制
+        // 触摸事件处理（移动端专用）
+        handleMoveTouch(dx, dy = 0) {
+            if (this.gameOver || this.paused) return;
+            
+            // 阻止默认行为和事件冒泡
+            event.preventDefault();
+            event.stopPropagation();
+            
+            this.actionType = { dx, dy };
+            
+            if (dy > 0) {
+                // 单击下移
+                this.move(0, 1);
+                this.playSound('move');
+            } else {
+                // 左右移动
+                this.move(dx, 0);
+                this.playSound('move');
+            }
+            
+            // 启动长按计时器（移动端稍长延迟）
+            this.longPressTimer = setTimeout(() => {
+                this.startLongPress(dy > 0 ? { dx: 0, dy: 1, isDropping: true } : { dx, dy: 0 });
+            }, 300);
+        },
+        
+        handleRotateTouch() {
+            if (this.gameOver || this.paused) return;
+            
+            // 阻止默认行为和事件冒泡
+            event.preventDefault();
+            event.stopPropagation();
+            
+            this.actionType = 'rotate';
+            this.rotate();
+            this.playSound('rotate');
+            
+            // 移动端旋转不启用长按（避免重复旋转问题）
+        },
+        
+        handleTouchEndBtn() {
+            // 阻止默认行为和事件冒泡
+            event.preventDefault();
+            event.stopPropagation();
+            
+            this.stopAction();
+        },
+        
+        // 长按控制（主要用于桌面端）
         startMove(dx, dy = 0) {
             if (this.gameOver || this.paused) return;
 
@@ -1335,7 +1383,7 @@ const app = createApp({
                     this.move(this.actionType.dx, this.actionType.dy || 0);
                     this.playSound('move');
                 }
-            }, 100); // 快速重复
+            }, 150); // 调整重复间隔，避免移动端移动两格
         },
         
         stopAction() {
