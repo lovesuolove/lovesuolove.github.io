@@ -2,24 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lovesuolove.github.io/tools/index.html</loc>
-    
-    <lastmod>2025-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lovesuolove.github.io/projects/index.html</loc>
-    
-    <lastmod>2025-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lovesuolove.github.io/tags/index.html</loc>
     
     <lastmod>2025-07-21</lastmod>
@@ -29,25 +11,7 @@
   </url>
   
   <url>
-    <loc>https://lovesuolove.github.io/2024/01/02/modern-snake-game-development/</loc>
-    
-    <lastmod>2025-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lovesuolove.github.io/2024/01/03/tetris-game-development/</loc>
-    
-    <lastmod>2025-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lovesuolove.github.io/2024/01/01/welcome-to-my-blog/</loc>
+    <loc>https://lovesuolove.github.io/tools/index.html</loc>
     
     <lastmod>2025-07-21</lastmod>
     
@@ -75,6 +39,42 @@
   
   <url>
     <loc>https://lovesuolove.github.io/categories/index.html</loc>
+    
+    <lastmod>2025-07-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovesuolove.github.io/projects/index.html</loc>
+    
+    <lastmod>2025-07-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovesuolove.github.io/2024/01/02/modern-snake-game-development/</loc>
+    
+    <lastmod>2025-07-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovesuolove.github.io/2024/01/03/tetris-game-development/</loc>
+    
+    <lastmod>2025-07-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovesuolove.github.io/2024/01/01/welcome-to-my-blog/</loc>
     
     <lastmod>2025-07-21</lastmod>
     

@@ -804,13 +804,13 @@ body {
             
             <div class="controls">
                 <div class="control-row">
-                    <button @touchstart="handleRotateTouch" @touchend="handleTouchEndBtn" @mousedown="startRotate" @mouseup="stopAction" class="control-btn rotate-btn">🔄 旋转</button>
+                    <button @touchstart="(e) => handleRotateTouch(e)" @touchend="handleTouchEndBtn" @mousedown="startRotate" @mouseup="stopAction" class="control-btn rotate-btn">🔄 旋转</button>
                     <button @click="togglePause" class="control-btn pause-btn">{{ paused ? '▶️ 继续' : '⏸️ 暂停' }}</button>
                 </div>
                 <div class="control-row">
-                    <button @touchstart="handleMoveTouch(-1)" @touchend="handleTouchEndBtn" @mousedown="startMove(-1)" @mouseup="stopAction" class="control-btn move-btn">⬅️</button>
-                    <button @touchstart="handleMoveTouch(0, 1)" @touchend="handleTouchEndBtn" @mousedown="startMove(0, 1)" @mouseup="stopAction" class="control-btn down-btn">⬇️</button>
-                    <button @touchstart="handleMoveTouch(1)" @touchend="handleTouchEndBtn" @mousedown="startMove(1)" @mouseup="stopAction" class="control-btn move-btn">➡️</button>
+                    <button @touchstart="(e) => handleMoveTouch(e, -1)" @touchend="handleTouchEndBtn" @mousedown="startMove(-1)" @mouseup="stopAction" class="control-btn move-btn">⬅️</button>
+                    <button @touchstart="(e) => handleMoveTouch(e, 0, 1)" @touchend="handleTouchEndBtn" @mousedown="startMove(0, 1)" @mouseup="stopAction" class="control-btn down-btn">⬇️</button>
+                    <button @touchstart="(e) => handleMoveTouch(e, 1)" @touchend="handleTouchEndBtn" @mousedown="startMove(1)" @mouseup="stopAction" class="control-btn move-btn">➡️</button>
                 </div>
             </div>
         </div>
@@ -1279,7 +1279,7 @@ const app = createApp({
         },
         
         // 触摸事件处理（移动端专用）
-        handleMoveTouch(dx, dy = 0) {
+        handleMoveTouch(event, dx, dy = 0) {
             if (this.gameOver || this.paused) return;
             
             // 阻止默认行为和事件冒泡
@@ -1304,7 +1304,7 @@ const app = createApp({
             }, 300);
         },
         
-        handleRotateTouch() {
+        handleRotateTouch(event) {
             if (this.gameOver || this.paused) return;
             
             // 阻止默认行为和事件冒泡
@@ -1318,7 +1318,7 @@ const app = createApp({
             // 移动端旋转不启用长按（避免重复旋转问题）
         },
         
-        handleTouchEndBtn() {
+        handleTouchEndBtn(event) {
             // 阻止默认行为和事件冒泡
             event.preventDefault();
             event.stopPropagation();
