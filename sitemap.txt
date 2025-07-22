@@ -1,12 +1,12 @@
 https://lovesuolove.github.io/tags/index.html
 https://lovesuolove.github.io/tools/index.html
 https://lovesuolove.github.io/projects/index.html
+https://lovesuolove.github.io/2024/01/02/modern-snake-game-development/
+https://lovesuolove.github.io/2024/01/03/tetris-game-development/
 https://lovesuolove.github.io/2024/01/01/welcome-to-my-blog/
 https://lovesuolove.github.io/about/contact.html
 https://lovesuolove.github.io/about/index.html
 https://lovesuolove.github.io/categories/index.html
-https://lovesuolove.github.io/2024/01/02/modern-snake-game-development/
-https://lovesuolove.github.io/2024/01/03/tetris-game-development/
 https://lovesuolove.github.io/
 https://lovesuolove.github.io/tags/JavaScript/
 https://lovesuolove.github.io/tags/Canvas/
