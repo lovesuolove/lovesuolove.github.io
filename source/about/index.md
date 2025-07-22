@@ -51,13 +51,12 @@ layout: "page"
           <p>动态交互和复杂逻辑实现</p>
         </div>
       </div>
-      <div class="skill-item">
-        <div class="skill-icon">🎨</div>
-        <div class="skill-info">
-          <h4>Canvas & WebGL</h4>
-          <p>图形渲染和游戏开发</p>
-        </div>
-      </div>
+    </div>
+  </div>
+  
+  <div class="skill-category">
+    <h3>📱 移动开发</h3>
+    <div class="skills-grid">
       <div class="skill-item">
         <div class="skill-icon">📱</div>
         <div class="skill-info">
@@ -65,6 +64,12 @@ layout: "page"
           <p>Swift和Objective-C移动应用开发</p>
         </div>
       </div>
+    </div>
+  </div>
+  
+  <div class="skill-category">
+    <h3>🐍 后端开发</h3>
+    <div class="skills-grid">
       <div class="skill-item">
         <div class="skill-icon">🐍</div>
         <div class="skill-info">
